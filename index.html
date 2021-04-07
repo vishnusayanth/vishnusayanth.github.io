@@ -947,7 +947,7 @@
       $('#email-form').submit(function(e){
             e.preventDefault();
             let url = this.action;
-            let formData = $('#form').serialize();
+            let formData = $('#email-form').serialize();
             let posting = $.post(url, formData);
             posting.done(function (data) {
                 alert(data.data);
